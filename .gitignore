@@ -1,0 +1,22 @@
+# ID, Password格納クラスなのでgit管理対象にしない。
+account.rb
+
+# 環境ファイル
+.ruby-version
+.bundle
+.idea
+bundle/
+nohup.out
+
+# 一時ファイル
+tmp/
+test/
+doc/
+old/
+
+# ドキュメント類
+*.log
+*.csv
+*.zip
+*.xls
+*.xlsx
