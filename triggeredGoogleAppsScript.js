@@ -109,8 +109,9 @@ function sendHttpPost(payload) {
   
   Logger.log("options in sendHttpPost ===>" + options);
   
-  var response = UrlFetchApp.fetch("http://navoglio.xsrv.jp/scripts/BuymaManager/writeOrderToSS.php", options);
-
+  //var response = UrlFetchApp.fetch("http://navoglio.xsrv.jp/scripts/BuymaManager/writeOrderToSS.php", options);
+  var response = UrlFetchApp.fetch("http://ec2-52-69-199-197.ap-northeast-1.compute.amazonaws.com/buyma/order", options);
+  
   Logger.log(" ");
   Logger.log(" ");
   Logger.log("response in sendHttpPost ===>" + response);
