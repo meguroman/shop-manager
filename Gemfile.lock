@@ -68,6 +68,7 @@ GEM
     multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.4.4)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
     nokogiri (1.6.7.2)
@@ -82,6 +83,8 @@ GEM
       rack (>= 1.2, < 3)
     os (0.9.6)
     rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
     rake (11.1.2)
     retriable (1.4.1)
     signet (0.7.2)
@@ -89,7 +92,12 @@ GEM
       faraday (~> 0.9)
       jwt (~> 1.5)
       multi_json (~> 1.10)
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
     thread_safe (0.3.5)
+    tilt (2.0.3)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unf (0.1.4)
@@ -103,8 +111,10 @@ PLATFORMS
 DEPENDENCIES
   google_drive
   mechanize
+  mysql2
   nokogiri
   rake
+  sinatra
 
 BUNDLED WITH
    1.11.2

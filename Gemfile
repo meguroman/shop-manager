@@ -5,4 +5,5 @@ gem 'rake'
 gem 'google_drive'
 gem 'nokogiri'
 gem 'mechanize'
-
+gem 'mysql2'
+gem 'sinatra'
