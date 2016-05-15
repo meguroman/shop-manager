@@ -2,7 +2,10 @@ function myFunction() {
 
   //get unread threads from inbox of Gmail
   var threads = GmailApp.search("label:inbox is:unread [BUYMA]注文");
-
+  
+  //if order mail dose not exist, exit code.
+  if (threads.length == 0) return true;
+  
   //make var
   var msg;
   var date;
@@ -117,6 +120,4 @@ function sendHttpPost(payload) {
   Logger.log("response in sendHttpPost ===>" + response);
   
 }
-
-
 
