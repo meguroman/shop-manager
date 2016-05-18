@@ -54,7 +54,11 @@ attr_accessor :status, :handling, :item, :size, :color, :option, :comment, :date
     @delivery_partner_fee = 0
     @other_expenses = 0
   end
+
+  def to_h
+    keys = self.instance_variables
+    values = self.instance_variables.map{ |key| self.instance_variable_get(key) }
+
+    return Hash[*[keys, values].transpose.flatten]
+  end
 end
-
-
-
